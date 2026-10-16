@@ -1,0 +1,34 @@
+{
+  "project_label": "example-project",
+  "expected_image_name": "sfm.exe",
+  "expected_image_sha256": "REPLACE_WITH_THE_SHA256_OF_YOUR_SFM_EXE",
+  "report_dir": "C:\\REPLACE\\WITH\\AN\\EXISTING\\PRIVATE\\REPORT\\FOLDER",
+  "interval_seconds": 2,
+  "gap_warning_seconds": 3,
+  "gap_fail_seconds": 6,
+  "session_limit_seconds": 2700,
+  "hard_cap_seconds": 3000,
+  "entry": {
+    "private_max_mib": 1536,
+    "ram_min_gib": 3,
+    "commit_min_gib": 3,
+    "va_free_min_mib": 512,
+    "va_largest_min_mib": 128,
+    "gpu_max_mib": 768
+  },
+  "abort": {
+    "private_above_mib": 2560,
+    "ram_below_gib": 2,
+    "commit_below_gib": 2,
+    "va_free_below_mib": 384,
+    "va_largest_below_mib": 64,
+    "gpu_at_or_above_mib": 1536
+  },
+  "markers": {
+    "1": "BEFORE_LOAD_A",
+    "2": "AFTER_LOAD_A",
+    "3": "BEFORE_LOAD_B",
+    "4": "AFTER_LOAD_B",
+    "5": "CAPTURE"
+  }
+}

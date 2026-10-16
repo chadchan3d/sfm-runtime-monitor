@@ -1,0 +1,23 @@
+# Monitor outputs are private evidence; never commit them.
+SRM_*_SAMPLES.jsonl
+SRM_*_REPORT.json
+reports/
+
+# Configs contain machine-specific paths and hashes: everything under config/ is private by default.
+# Only the placeholder example is tracked.
+config/*
+!config/example.config.json
+*.local.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
